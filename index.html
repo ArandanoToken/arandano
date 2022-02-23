@@ -23,22 +23,50 @@
 <link rel="manifest" href="img/fav.ico/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="img/fav.ico/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+<meta name="theme-color" content="transparent">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
 
 <style>
     * {
     margin: 0;
     padding: 0;
+    
 }
-
 
 body {
     margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 	background-size: 400% 400%;
 }
+.box {
+  float: left;
+  width: 31.20%;
+  box-sizing: border-box;
+  color:#000000;
+  border-width: 1px;
+  border-style:double;
+  border-top-color:transparent;
+  border-bottom-color:transparent;
+  border-left-color: transparent;
+  border-right-color:#0500496b;
+  top: -333px;
+  position:relative;
+  padding: 10px;
+  height: 90px;
+  left:20px;
+
+  }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+  color:#020202;
+  border-radius:16px
+  
+}
+
 
 img.coin:hover {
   -webkit-transform: scaleX(-1);
@@ -63,8 +91,8 @@ img.coin:hover {
   opacity: 1;
   top: 0;
 padding-right:60px;
-height:42px;
-z-index: 1000;
+height:44px;
+
 }
   
 .topnav a {
@@ -72,7 +100,7 @@ z-index: 1000;
   display: block;
   color: white;
   text-align: center;
-  padding: 12px 16px;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
 }
@@ -99,7 +127,7 @@ z-index: 1000;
   border: none;
   outline: none;
   color: white;
-  padding: 12px 16px;
+  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -111,7 +139,7 @@ z-index: 1000;
   background-color: #cbc1f8;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 200;
+  
 }
 
 .dropdown-content a {
@@ -171,43 +199,58 @@ z-index: 1000;
 .div1 {/* From https://css.glass */
 background: rgba(255, 255, 255, 1.0);
 border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+box-shadow: 1.5em 1.5em 20px rgba(0, 0, 0, 0.3);
 backdrop-filter: blurs(1.4px);
 -webkit-backdrop-filter: blur(2.4px);
 border: 1px solid rgba(255, 255, 255, 1.0);
-margin-left:600px;
-margin-right:200px;
-margin-bottom:100px;
-margin-top:-580px;
+margin-right:720px;
+margin-left:30px;
+margin-bottom:400px;
+top:-504px;
 padding: 40px;
 color: rgb(83, 83, 83);
 text-align:left;
 position: relative;
-font-family: 'Quicksand';
-
-
+font-family: 'Roboto';
 }
 
 .div2 {/* From https://css.glass */
 background: rgba(255, 255, 255, 1.0);
 border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+box-shadow: 1.5em 1.5em 20px rgba(0, 0, 0, 0.3);
 backdrop-filter: blurs(1.4px);
 -webkit-backdrop-filter: blur(2.4px);
 border: 1px solid rgba(255, 255, 255, 1.0);
-width:65vw;
+width:70vw;
 height:70vh;
-margin-left:100px;
-margin-right:300px;
+margin-left:28px;
+margin-right:0px;
 margin-bottom:20px;
-margin-top:-40px;
+margin-top:-885px;
 padding: 40px;
 color: rgb(83, 83, 83);
 text-align:left;
 position:relative;
-font-family: 'Quicksand';
-
+font-family: 'Roboto';
 }
+
+.div3 {/* From https://css.glass */
+background:#ffffff;
+border-radius: 16px;
+box-shadow: 1.5em 1.5em 20px rgba(0, 0, 0, 0.3);
+backdrop-filter: blurs(1.4px);
+-webkit-backdrop-filter: blur(2.4px);
+border: Opx;
+margin-left:585px;
+margin-right:200px;
+height:187px;
+top:298px;
+text-align:left;
+position: relative;
+font-family:Arial, Helvetica, sans-serif;
+z-index:2000;
+}
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -229,8 +272,6 @@ font-family: 'Quicksand';
     display: block;
     text-align: left;
   }
-
-
 }
 h2 {
   font-size:33px;
@@ -238,9 +279,12 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   float:right;
-  padding:20px;
-  padding-right:70px;
-  margin-top: 40px;
+  padding:50px;
+  padding-right:80px;
+  margin-top: 0px;
+  margin-left:-21px;
+  font-family: 'Roboto';
+ 
 }
 h1 { padding:40px; margin-top:30px; margin-left:-30px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 
@@ -269,7 +313,7 @@ h3 {
    left: 0;
    bottom: 0;
    width: 100%;
-   height: 70px;
+   height: 60px;
    background-color: #25224f;
    color: white;
    text-align: center;
@@ -324,7 +368,7 @@ a.logotxt:hover { background-color:#25224f;
     background: #4e54c8;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
-    height:220vh;
+    height:195vh;
     z-index:-1100;
 }
 
@@ -335,7 +379,7 @@ a.logotxt:hover { background-color:#25224f;
     width: 100%;
     height: 100%;
     overflow: visible;
-    z-index: 0;
+    z-index:-1000;
    
 }
 
@@ -345,7 +389,7 @@ a.logotxt:hover { background-color:#25224f;
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(12, 14, 104, 0.6);
     animation: animate 25s linear infinite;
     bottom: -150px;
     z-index: 0;
@@ -458,8 +502,36 @@ a.logotxt:hover { background-color:#25224f;
 
 }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
+
+  
+<div class="topnav" id="myTopnav"  style="position: relative; z-index: 1000;">
+	 <div><a class="logo" href="index.html"><img class="blue" src="img/blueberry.jpg"/></a></div>
+	 <h3><a class="logotxt" href="index.html"><font face="Verdana">Arandano</font> 
+    <font style="font-size:10px; border: 0ch; margin-left:45px;">Token</font></a>
+  </h3> 
+   <a href="mailto:arandanotoken@gmail.com">Contact</a>
+   
+   <a href="pdf/White_paper_ARAN_ENG.pdf">White Paper
+  </a>
+
+   <a href="#">NFT</a>
+   <a href="index.html">Token</a>
+   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+   <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+  </div>
   <div class="area" >
     <ul class="circles" style="z-index:0; ">
             <li></li>
@@ -474,58 +546,47 @@ a.logotxt:hover { background-color:#25224f;
             <li></li>
     </ul>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-  <script src="script.js"></script>
-<div class="topnav" id="myTopnav"  style="position: relative;">
-	 <div><a class="logo" href="index.html"><img class="blue" src="img/blueberry.jpg"/></a></div>
-	 <h3><a class="logotxt" href="index.html"><font face="Verdana">Arandano</font> <font style="font-size:10px; border: 0ch; margin-left:45px;">Token</font></a></h3> 
-   <a href="mailto:arandanotoken@gmail.com" class="active">Contact</a>
-   
-   <div class="dropdown">
-     <button class="dropbtn">White Paper
-       <i class="fa fa-caret-down"></i>
-     </button>
-     <div class="dropdown-content">
-      <a href="pdf/White_paper_ARAN_ENG.pdf">ENG</a>
-       <a href="pdf/White_paper_ARAN_ESP.pdf">ESP</a>
-     </div>
-   </div> 
-   <a href="#">NFT</a>
-   <a href="index.html">Token</a>
-   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
- </div>
+<div style="padding-left:95px; z-index:2000;">
  
- <div style="padding-left:16px">
+<h2 style="z-index:2000;">Arandano token está basado en la red de binance BSC, pretende posicionarse como la moneda 
+  tokenomics del mundo agropecuario, gastronomico y respostero, donde los distintos participantes podrán usar el token a modo de marketing 
+  creando beneficios dentro de sus propios negocios acompañados del estilo y narrativa retro frutal.  <br /> <br /> 
+</h2>
+<div class="div3">
+    <div class="clearfix">
+      <div class="box" style="background-color:transparent; ">
+      <p>Total Supply: 10,000,000,000</p>
+      </div>
+      <div class="box" style="background-color:transparent;">
+      <p>Max Supply: 10,000,000,000</p>
+      </div>
+      <div class="box" style="background-color:transparent;">    <p>Liquidity Pools: 5,000,000,000</p>
+      </div>
+      </div>
+      <div class="clearfix">
+        <div class="box" style="background-color:transparent;">
+        <p>Volume 24hrs: ?</p>
+        </div>
+        <div class="box" style="background-color:transparent;">      <p>Circulating Supply: ?</p>
+        </div>
+        <div class="box" style="background-color:transparent;">      <p></p>
+        </div>
+    </div>   </div>
 
- 
- <script>
- function myFunction() {
-   var x = document.getElementById("myTopnav");
-   if (x.className === "topnav") {
-     x.className += " responsive";
-   } else {
-     x.className = "topnav";
-   }
- }
- </script>
- 
-  </a>
-</div>
-
-<div style="padding-left:95px;">
- 
-<h2>Arandano token está basado en la red de binance BSC, pretende posicionarse como la moneda tokenomics del mundo agropecuario, gastronomico y respostero, donde los distintos participantes podrán usar el token a modo de marketing creando beneficios dentro de sus propios negocios acompañados del estilo y narrativa retro frutal.  <br /> <br /> 
-  </h2><div style="z-index: 2000; position: relative"><img src="img/blueberry-token.png" style=" width:290px; height:290px; margin-top:300px; margin-left:170px; z-index: 20; position: relative;"></div>
+  
+<div style="z-index: 2000; position: relative">
+  <img src="img/blueberry-token.png" style=" width:290px; height:290px; margin-left:760px; top:90px; z-index: 20; position: relative;"></div>
+  
   <div class="div1">
-  <p style="font-size:1.5vw;"> <br /> 
+  <p style="font-size:1.5vw;"> 
     <b style="font-size:26px;">Road Map:</b><br />
     <br />2022<br /> 
-	  · Lanzamiento de Arándano Tokena ARAN y landing page<br /> 
+	  · Lanzamiento de Arándano Token ARAN y landing page<br /> 
 	  · Creación de Ecosistema con 5 tokens de funcionalidad similar: <br />
   <br />2023<br /> 
 	  · Creación de galeria NFT <br />
     <br />2024-2025<br /> 
-	  · Creación de Ico o Dex  <br /><br /><br />
+	  · Creación de Ico o Dex  <br />
    
     <img class="coin" src="img/coinUSD_S.png" style="width:70px; height:70px;">
     <img class="coin"src="img/pinetree_S.png" style="width:70px; height:80px;">
